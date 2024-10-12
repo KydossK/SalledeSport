@@ -4,23 +4,36 @@
     overflow: hidden;
     display: flex;
     justify-content: center; 
-    align-items: center;
+    align-items:center;
+    position: relative;
 }
-.logo {
-    width: 100%;
+.gym-name {
+    position: absolute;
+    color: white; 
+    font-size: 1.2cm;
+    text-align: center; 
+    z-index: 10;   /*text au dessus de image !! */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
 }
 .menubarre {
+    background-color: burlywood;
     border-top: 4px solid rgb(213, 131, 0);
+    border-bottom: 4px solid rgb(213, 131, 0);
     display: flex; 
-    justify-content: center; 
+    justify-content: center;    
+    width: 100%; 
     gap: 15px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
 }
 .menu {
     text-decoration: none;
     color: white;
     background-color: #007bff; 
     padding: 10px 20px;
-    margin: 20px 10px 0px;
+    margin: 15px 10px 15px;
+    border: solid 2px rgb(213, 131, 0);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -28,13 +41,23 @@
     background-color: #0056b3; 
 }
 
+/* page generique */
+
+body {
+    background-color: #333;
+}
 
 
 /*footer ci-dessous*/
 
 footer {
-    background-color: #cacaca; 
-    padding: 20px;
+    display: block;
+    width: 100%;
+    background-color: burlywood; 
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .footer-content {
     display: flex;
@@ -54,9 +77,11 @@ footer {
 }
 .mentions {
     text-decoration: none;
+    font-size: small;
     color: white;
     background-color: #007bff; 
-    padding: 10px 20px;
+    margin: 0px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }

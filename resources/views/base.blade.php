@@ -8,17 +8,19 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-   <header>
+<header>
     <div class="image-container">
-        <img class='bandeau' src="{{ asset('Img/imgbandeau.jpg')}}" alt="">
+        <img class='bandeau' src="{{ asset('Img/imgbandeau.jpg')}}" alt="Bandeau">
+        <h1 class="gym-name">Mountain Melody Gym</h1>
     </div>
-    <div class="menubarre">
-            <a href="home" class="menu">home</a>         
-            <a href="cours" class="menu">cours</a>        
-            <a href="tarifs" class="menu">tarifs</a>        
-            <a href="contact" class="menu">contact</a>
-        </div>
-   </header>
+</header>
+
+<div class="menubarre">
+    <a href="home" class="menu">home</a>         
+    <a href="cours" class="menu">cours</a>        
+    <a href="tarifs" class="menu">tarifs</a>        
+    <a href="contact" class="menu">contact</a>
+</div>
 
     @section('content')
     @show
