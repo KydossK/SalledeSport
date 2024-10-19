@@ -71,7 +71,8 @@
 <div class='mentionsphotos'>
 <p>Toutes les images utilisées sur ce site sont la propriété de leurs auteurs respectifs et sont utilisées avec autorisation.</p>
     <a href="https://fr.freepik.com/auteur/freepik/icones/detailed-flat-circular-flat_44">Icône de Freepik</a> <br>
-    <a href="https://fotor.com/images/create">Images de Fotor</a>
+    <a href="https://fotor.com/images/create">Images de Fotor</a> <br>
+    <a href="https://openai.com/index/dall-e-3/">Images générées par DALL-E</a>
 </div>
 
 

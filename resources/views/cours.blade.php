@@ -2,7 +2,7 @@
 @extends('base')
 @section('content')
 
-
+<body style="background-image: url('{{ asset('Img/imggnr.jpg') }}');">
 <div class="semaine">
     <div class="jour">
         <h2>Lundi</h2>
@@ -45,7 +45,7 @@
         <img class='sticker' src="Img\yoga.png" alt="yoga">
     </div>
 </div>
-
+</div>
 
 @endsection
 

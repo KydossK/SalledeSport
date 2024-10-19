@@ -11,16 +11,19 @@
 <header>
     <div class="image-container">
         <img class='bandeau' src="{{ asset('Img/imgbandeau.jpg')}}" alt="Bandeau">
-        <h1 class="gym-name">Mountain Melody Gym</h1>
+        <h1 class="salle-name">Mountain Melody Gym</h1>
     </div>
 </header>
 
 <div class="menubarre">
-    <a href="home" class="menu">home</a>         
-    <a href="cours" class="menu">cours</a>        
-    <a href="tarifs" class="menu">tarifs</a>        
-    <a href="contact" class="menu">contact</a>
+    <img class="img-logo-menu" src="Img/logo-removebg.png" alt="LogoMenu">
+    <span class="logo-text">Mountain Melody Gym</span>
+    <a href="home" class="menu">Accueil</a>         
+    <a href="cours" class="menu">Cours</a>        
+    <a href="tarifs" class="menu">Tarifs</a>        
+    <a href="contact" class="menu">Contact</a>
 </div>
+
 
     @section('content')
     @show
@@ -32,7 +35,7 @@
                 <li><a class="links" href="#">Instagram</a></li>
                 <li><a class="links" href="#">TikTok</a></li>
             </ul>
-            <a href="mentions" class="mentions">Mentions légales</a>
+            <a href="mentionslegales" class="mentions">Mentions légales</a>
         </div>
  </footer>
 

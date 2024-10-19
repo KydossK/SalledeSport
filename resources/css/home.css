@@ -1,0 +1,112 @@
+.background-image-container {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.left-white-box {
+    position: absolute;
+    top: 50%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    width: 300px; 
+    height: auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.758); 
+    border: solid 1px;
+    border-color: rgba(0, 255, 213, 0.408);
+    box-shadow: 0 4px 8px rgb(202, 202, 202);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.left-white-box p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+
+}
+
+.right-text {
+    width: 450px;
+    position: absolute;
+    line-height: 1.8em;
+    font-size: 1.5rem;
+    top: 40%; 
+    left: 75%; 
+    transform: translate(-50%, -20%); 
+    color: white; 
+    text-shadow: 1px 1px 2.5px rgb(170, 6, 6);
+    text-align: left; 
+}
+
+
+/* 2nd section / coming 2nd background */
+.long-white-box {
+    position: absolute;
+    top: -15vh; 
+    left: 25%;
+    transform: translate(-50%, -0%); 
+    width: 300px; 
+    height: auto; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.804); 
+    border-radius: 15px;
+    border: solid 1px;
+    border-color: rgba(0, 255, 213, 0.408);
+    box-shadow: 0 4px 8px rgb(202, 202, 202); 
+    text-align: center;
+    z-index: 10; /* S'assure qu'elle soit visible par-dessus les images */
+}
+
+.long-white-box p {
+    font-size: 1.3rem;
+    line-height: 1.5em;    
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    /* Réorganisation des éléments en colonne */
+.right-text, .left-white-box, .long-white-box {
+    position: relative;
+    width: 70%;  /* Plus large sur petits écrans */
+    margin: 20px auto;  /* Centre les éléments */
+    left: auto;
+    top: auto;
+    transform: none;
+}
+
+/* Ajustement des tailles de texte */
+.right-text {
+    background-color: rgba(255, 255, 255, 0.758);
+    border: solid 1px rgba(0, 255, 213, 0.408);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px;
+    padding: 15px; /* Ajoute du padding pour l'espacement */
+    text-align: center; /* Centrer le texte */
+    /* pas besoin de ces marges car margin est déjà appliqué plus haut */
+}
+
+.left-white-box, .long-white-box {
+    font-size: 1.2rem;
+}
+
+.left-white-box p, .long-white-box p {
+    font-size: 1.2rem;
+}
+
+/* Ajustement des marges entre éléments */
+.left-white-box {
+    margin-top: 10px;
+}
+
+   .long-white-box {
+       margin-bottom: 20px;
+    }
+}

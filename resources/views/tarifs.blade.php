@@ -2,16 +2,16 @@
 @extends('base')
 @section('content')
 
-
-<div class="tarifs">
-    <div class="asso-box"> 
+<div class="background-image" style="background-image: url('{{ asset('Img/cardio2.jpg') }}');">
+    <div class="tarifs">
+    <div class="asso-box1"> 
 
         <div class="assotarif"> 
             <h2>Adhésion Annuelle <br>à l'Associtation :</h2>
             <p>15 euros <br>(Obligatoire)</p>
         </div>
     </div>
-    <div class="asso-box">
+    <div class="asso-box2">
     <div class="seance-container">
 
          <div class="seances">
@@ -36,7 +36,7 @@
    </div>
     </div>
 </div>
-
+</div>
 </div>
 
 @endsection

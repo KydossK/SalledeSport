@@ -1,3 +1,11 @@
+.background-image {
+    background-image: url('{{ asset('Img/cardio1.jpg') }}'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
 .tarifs {
     padding-top: 25px;
     display: flex;
@@ -5,14 +13,21 @@
     align-items: center;
 }
 /* boite tarif asso*/
-.asso-box {
+.asso-box1 {
     align-items: center;    
     width: 350px;
     margin: 10px;
 }
 
+.asso-box2 {
+    align-items: center;    
+    width: 350px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
 .assotarif {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(50, 96, 0, 0.775);     /*a modidier  pour exemple  */
     color: rgb(0, 0, 0);
     border: solid 2px #007bff;
     border-radius: 15px; 
@@ -25,15 +40,17 @@
     width: 100%;
     display: flex; 
     gap: 20px;
+    margin: 0px 0px 20px;
 }
 
 .seances, .abo {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(189, 241, 0, 0.775);       /*a modidier   poiur exemple */
     color: rgb(0, 0, 0);
     border: solid 2px #007bff;
     border-radius: 15px;
     margin: 5px;
     width: 100%;
+    height: 200px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

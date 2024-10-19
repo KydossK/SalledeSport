@@ -1,13 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*Voili pour les fonts Persos // tu nomme ta font  ; tu definis son emplacement ; ensuite aller cherche via nom */
+@font-face {
+    font-family: 'Sriracha';
+    src: url('C:\Users\pierr\Documents\CNAM\SalledeSport\laravel-base\public\fonts\Sriracha\Sriracha-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*banner / menu */
 .image-container{
     width: 100vw; 
-    height: 200px; 
+    height: 250px; 
     overflow: hidden;
     display: flex;
     justify-content: center; 
     align-items:center;
     position: relative;
 }
-.gym-name {
+.salle-name {
     position: absolute;
     color: white; 
     font-size: 1.2cm;
@@ -21,11 +35,28 @@
     border-bottom: 4px solid rgb(213, 131, 0);
     display: flex; 
     justify-content: center;    
+    align-items: center;
     width: 100%; 
     gap: 15px; 
     position: sticky; 
     top: 0; 
     z-index: 1000; 
+}
+.img-logo-menu {
+    top: 5%;
+    width: 70px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+}
+.logo-text {
+    position: absolute;  
+    left: 130px;         
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-family: 'Sriracha' !important;       /*bordel j'ai géléré et cest moche  tampis je laisse pour lexemple */
+    font-weight: bold;
+    color: white;        
 }
 .menu {
     text-decoration: none;
@@ -40,6 +71,7 @@
 .menu:hover {
     background-color: #0056b3; 
 }
+
 
 /* page generique */
 
@@ -58,6 +90,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 100;
 }
 .footer-content {
     display: flex;
@@ -87,4 +120,18 @@ footer {
 }
 .mentions:hover {
     background-color: #0056b3; 
+}
+
+
+/* Responsive Panel*/
+@media (max-width: 1200px) {
+    .logo-text {
+        display: none;     /* Cacher le logo et le texte quand la largeur de l'écran est inférieure à 768px */
+    }
+}
+
+@media (max-width: 768px) {
+    .img-logo-menu, .logo-text {
+        display: none;     /* Cacher le logo et le texte quand la largeur de l'écran est inférieure à 768px */
+    }
 }
