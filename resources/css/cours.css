@@ -1,18 +1,17 @@
-body {
-    background-size: cover; /* Couvre toute la zone */
-    background-position: center calc(50% + 10px); /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
-    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
-    margin: 0; /* Enlève les marges par défaut */
-    padding: 0; /* Enlève le padding par défaut */
+.background-image {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
 }
 
 .semaine {
     display: flex;
     justify-content: space-between; 
-    margin: 15px;
+    margin: 0px 15px;
     flex-wrap: wrap; 
     gap: 15px; 
+    padding: 35px;
 }
 
 .jour {
@@ -50,17 +49,19 @@ body {
 
 /*----Comportement adaptatif-----*/
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
     .semaine {
         justify-content: center; 
     }
     .jour {
-        width: 20%;
+        width: 25%;
+        padding: 0px;
     }
 }
 
 @media (max-width: 630px) {
     .jour {
-        width: 45%;
+        width: 55%;
+        padding: 0px;
     }
 }

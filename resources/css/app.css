@@ -1,14 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-}
-/*Voili pour les fonts Persos // tu nomme ta font  ; tu definis son emplacement ; ensuite aller cherche via nom */
-@font-face {
-    font-family: 'Sriracha';
-    src: url('C:\Users\pierr\Documents\CNAM\SalledeSport\laravel-base\public\fonts\Sriracha\Sriracha-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    width: 100vw;
 }
 
 /*banner / menu */
@@ -43,18 +36,20 @@ html, body {
     z-index: 1000; 
 }
 .img-logo-menu {
-    top: 5%;
-    width: 70px;
+    border: solid 1px #333;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    width: 65px;
     height: auto;
     position: absolute;
-    left: 50px;
+    left: 40px;
 }
 .logo-text {
     position: absolute;  
-    left: 130px;         
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    font-family: 'Sriracha' !important;       /*bordel j'ai géléré et cest moche  tampis je laisse pour lexemple */
+    left: 115px;         
+    font-size: 1.3rem;
+    text-shadow: 1px 1.3px 2px rgb(0, 0, 0);
+    font-family: 'sriracha';      /*    Links dans Head du Base.blade.php  !retenir le nom du fonts ! */
     font-weight: bold;
     color: white;        
 }
