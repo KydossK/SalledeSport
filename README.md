@@ -15,7 +15,7 @@ Merci de respecter ces règles et d'utiliser ces images de manière responsable.
 ## Processus création SalledeSport
 Projet salle de Sport 
 
-# [1er jour]
+# [Doc Technique]
 
 Création d'une base dans base.blade.php et son app.css
 Création des pages dans dossier Views : x.blade.php 
@@ -47,3 +47,14 @@ galére pour mettre les menu barre et footer en positions sticky mais OK
 --Git push--
 
 --creation readme--
+
+// reprise créa css  + créa des routes et controlleurs  ok 
+
+créa redirection http://127.0.0.1:8000/home vers http://127.0.0.1:8000/(NO-HOME) ok 
+
+Relecture du documents technique pour validation étapes et vritéres véaluation : 
+etape 13  ajoutez le code console.log('Hello Laravel');   -> test et OK
+
+npm run dev / php artisan serve -> OK ! 
+
+Git push 

@@ -7,7 +7,12 @@ use App\Http\Controllers\CoursController;
 use App\Http\Controllers\MentionsLegalesController;
 use App\Http\Controllers\TarifsController;
 
-Route::get('/home', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index']);
+
+// Route '/home' qui redirige vers la racine ('/')
+Route::get('/home', function () {
+    return redirect('/');
+})->name('home.index');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
