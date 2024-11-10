@@ -58,3 +58,11 @@ etape 13  ajoutez le code console.log('Hello Laravel');   -> test et OK
 npm run dev / php artisan serve -> OK ! 
 
 Git push 
+
+Modification Home Page pour media-queris OK 
+
+Ajout d'une carte google Map 
+creation d'une API google Et utilisation via script JS
+
+Mise a Jour CSS totale : Identité du site revue pour coller a l'identité du club 
+'Pregnant Healthy Gym' 'sunshine light' 
