@@ -11,12 +11,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUhlwthyGxIakBzOTe1H2LxTULIk0cl5w{{ config('services.google_maps.api_key') }}&callback=initMap" async defer></script>
+
 </head>
+
 <body>
+
 <header>
-    <div class="image-container">
-        <img class='bandeau' src="{{ asset('Img/imgbandeau.jpg')}}" alt="Bandeau">
-        <h1 class="salle-name">Mountain Melody Gym</h1>
+    <div class="image-container" style="background-image: url('{{ asset('Img/Mountain Melody.png') }}');">
     </div>
 </header>
 
@@ -27,6 +29,8 @@
     <a href="cours" class="menu">Cours</a>        
     <a href="tarifs" class="menu">Tarifs</a>        
     <a href="contact" class="menu">Contact</a>
+    <span class="joining">5 Bd Louis XIV, 59800 Lille<br>0 800 71 97 20</span>
+
 </div>
 
 

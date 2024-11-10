@@ -1,12 +1,34 @@
-/* sincérement : css généré par IA (gpt) pour le css page contact */ 
+/* Style pour le container avec l'image de fond */
+.background-image-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;  /* Centre les éléments horizontalement */
+    flex-direction: column;   /* Organise les éléments en colonne (formulaire + contact box + carte) */
+    align-items: center;
+}
 
+/* Container qui contient le formulaire et la contact-box */
+.form-and-contact-container {
+    display: flex;             /* Disposition en ligne (formulaire à gauche, contact box à droite) */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    width: 90%;                /* Prendre 90% de la largeur de l'écran */
+    max-width: 1300px;         /* Largeur max de l'ensemble de la section */
+    gap: 20px;                 /* Espace entre le formulaire et la contact box */
+    align-items: flex-start;   /* Aligne les éléments en haut */
+}
+
+/* Style pour le formulaire */
 .contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
+    flex: 1;                   /* Occupe toute la place disponible à gauche */
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(31, 5, 5, 0.734);
+    max-width: 800px;          /* Largeur max du formulaire */
+    box-sizing: border-box;
 }
 
 .contact-form-container h2 {
@@ -46,7 +68,7 @@
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #ba4390;
     color: white;
     border: none;
     border-radius: 4px;
@@ -57,5 +79,62 @@
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #8c1462;
+}
+
+
+
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;          /* Empile la contact-box et la carte verticalement */
+    gap: 20px;                       /* Espace entre la contact-box et la carte */
+    width: 48%;                      /* Largeur de la zone à droite */
+    max-width: 500px;                /* Largeur max de la zone à droite */
+}
+
+
+/* Style pour la contact-box */
+#contact-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 48%;                /* Largeur de la contact-box (à droite) */
+    max-width: 500px;          /* Largeur max de la contact-box */
+    height: auto;              /* Laisse la hauteur s'adapter au contenu */
+    box-sizing: border-box;
+}
+
+#contact-box h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#contact-box p {
+    font-size: 1rem;
+}
+
+/* Style pour la carte */
+#map {
+    max-width: 500px;          /* Largeur max de la carte */
+    width: 100%;               /* La carte prendra toute la largeur disponible */
+    margin-top: 20px;          /* Espace entre la carte et la contact box */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+    .form-and-contact-container {
+        flex-direction: column;  /* En mode mobile, on empile le formulaire et la contact-box */
+        align-items: center;
+    }
+
+    #contact-box,
+    .contact-form-container {
+        width: 100%;             /* Prendre toute la largeur sur mobile */
+        max-width: none;         /* Pas de largeur max sur mobile */
+    }
 }

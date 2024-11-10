@@ -2,7 +2,7 @@
 @extends('base')
 @section('content')
 
-<div class="background-image" style="background-image: url('{{ asset('Img/cardio2.jpg') }}');">
+<div class="background-image" style="background-image: url('{{ asset('Img/pregnant-yoga.jpg') }}');">
     <div class="tarifs">
     <div class="asso-box1"> 
 

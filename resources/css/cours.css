@@ -16,7 +16,7 @@
 
 .jour {
     background-color: #fff;
-    border: 2px solid #007bff;
+    border: 2px solid #8c1462;
     border-radius: 8px;
     padding: 20px;
     margin: 25px 0px 25px;
@@ -33,7 +33,7 @@
 
 .barre {
     height: 3px;
-    background-color: #007bff;
+    background-color: #8c1462;
     margin: 10px 0;
 }
 
@@ -55,13 +55,13 @@
     }
     .jour {
         width: 25%;
-        padding: 0px;
+        padding: 0px 0px 10px;
     }
 }
 
 @media (max-width: 630px) {
     .jour {
         width: 55%;
-        padding: 0px;
+        padding: 0px 0px 10px;
     }
 }

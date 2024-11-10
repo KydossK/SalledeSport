@@ -4,7 +4,6 @@
 
 
 <div class="background-image-container" style="background-image: url('{{ asset('img/pexels-lili.jpg') }}');">
-    <div>
         <div class="right-text">
             <h2>Mountain Melody Gym :</h2> <h3> Votre Espace Bien-être pour la Grossesse et l'Après-accouchement</h3>
             <p>Chez Mountain Melody Gym, nous comprenons les besoins spécifiques des futures mamans. Notre salle de sport est spécialement conçue pour accompagner les femmes enceintes dans chaque étape de leur parcours, avant et après l'accouchement.</p>
@@ -14,10 +13,9 @@
             <p> Préparez votre corps et votre esprit. <br> 
                 <br> Nos instructeurs spécialisés vous accompagnent avec des exercices sécurisés, adaptés à chaque trimestre de votre grossesse.</p>
         </div>
-    </div>
 </div>
 
-<div class="background-image-container" style="background-image: url('{{ asset('img/imggnr.jpg') }}');">
+<div class="background-image-container" style="background-image: url('{{ asset('img/women-practicing-together.jpg') }}');">
     <div class="long-white-box">
         <h2>Aprés l'accouchement :</h2> 
         <p> Nous comprenons les besoins spécifiques des futures mamans. <br>

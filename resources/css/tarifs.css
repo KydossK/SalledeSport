@@ -26,9 +26,9 @@
 }
 
 .assotarif {
-    background-color: rgba(50, 96, 0, 0.775);     /*a modidier  pour exemple  */
+    background-color: #c48ef1;     /*a modidier  pour exemple  */
     color: rgb(0, 0, 0);
-    border: solid 2px #007bff;
+    border: solid 2px #8c1462;
     border-radius: 15px; 
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -43,9 +43,9 @@
 }
 
 .seances, .abo {
-    background-color: rgba(189, 241, 0, 0.775);       /*a modidier   poiur exemple */
+    background-color: #F0C1E1;       /*a modidier   poiur exemple */
     color: rgb(0, 0, 0);
-    border: solid 2px #007bff;
+    border: solid 2px #8c1462;
     border-radius: 15px;
     margin: 5px;
     width: 100%;

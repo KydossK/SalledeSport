@@ -5,7 +5,7 @@ body {
 .background-image-container {
     position: relative;
     width: 100vw; 
-    height: 100vh; 
+    min-height: 100vh; 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -42,14 +42,22 @@ body {
 .right-text {
     width: 450px;
     position: absolute;
-    line-height: 1.8em;
-    font-size: 1.5rem;
-    top: 40%; 
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.5em;    
+    top: 66.5%; 
     left: 75%; 
     transform: translate(-50%, -20%); 
-    color: white; 
-    text-shadow: 2px 2px 2.5px rgb(125, 3, 3);
-    text-align: left; 
+    text-align: left;
+
+    /* Style de la box comme .long-white-box */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.804); 
+    border-radius: 15px;
+    border: solid 1px;
+    border-color: rgba(0, 255, 213, 0.408);
+    box-shadow: 0 4px 8px rgb(202, 202, 202); 
+    z-index: 10; /* Assure qu'elle soit visible par-dessus les images */
 }
 
 
@@ -89,7 +97,7 @@ body {
 .right-text, .left-white-box, .long-white-box {
     position: relative;
     width: 70%;  /* Plus large sur petits écrans */
-    margin: 20px auto;  /* Centre les éléments */
+    margin: 0px auto;  /* Centre les éléments */
     left: auto;
     top: auto;
     transform: none;

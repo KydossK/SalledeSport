@@ -2,7 +2,7 @@
 @extends('base')
 @section('content')
 
-<div class="background-image" style="background-image: url('{{ asset('Img/cardio2.jpg') }}');">
+<div class="background-image" style="background-image: url('{{ asset('Img/women-doing-gym.jpg') }}');">
 <div class="semaine">
     <div class="jour">
         <h2>Lundi</h2>
