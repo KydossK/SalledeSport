@@ -101,8 +101,7 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 48%;                /* Largeur de la contact-box (à droite) */
-    max-width: 500px;          /* Largeur max de la contact-box */
+    max-width: 300px;          /* Largeur max de la contact-box */
     height: auto;              /* Laisse la hauteur s'adapter au contenu */
     box-sizing: border-box;
 }
@@ -136,5 +135,9 @@
     .contact-form-container {
         width: 100%;             /* Prendre toute la largeur sur mobile */
         max-width: none;         /* Pas de largeur max sur mobile */
+    }
+
+    .left-side-container {
+        width: 80%;
     }
 }

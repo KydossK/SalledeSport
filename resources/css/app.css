@@ -142,3 +142,12 @@ footer {
         display: none;     /* Cacher le logo et le texte quand la largeur de l'écran est inférieure à 768px */
     }
 }
+@media (max-width: 480px) {
+    .menubarre {
+        gap: 0px;
+    }
+    .menu{
+     padding: 10px 10px;
+    margin: 5px 5px 5px;
+    }
+}
