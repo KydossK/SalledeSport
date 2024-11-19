@@ -64,3 +64,12 @@
     font-size: 15px;
     color: #333;
 }
+
+
+.seances:hover, .abo:hover, .assotarif:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+

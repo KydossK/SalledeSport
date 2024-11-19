@@ -13,7 +13,7 @@
             <div id="contact-box">
                 <h2>Mountain Melody Gym</h2>
                 <p>5 Bd Louis XIV, 59800 Lille<br>
-                    <br> 0 800 71 97 20</p>
+                    <br>06 00 00 00 00</p>
             </div>
 
             <!-- Carte sous la contact-box -->

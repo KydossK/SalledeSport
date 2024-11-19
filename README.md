@@ -15,8 +15,6 @@ Merci de respecter ces règles et d'utiliser ces images de manière responsable.
 ## Processus création SalledeSport
 Projet salle de Sport 
 
-# [Doc Technique]
-
 Création d'une base dans base.blade.php et son app.css
 Création des pages dans dossier Views : x.blade.php 
 Liens dans web.php pour chaque page views.
@@ -66,3 +64,81 @@ creation d'une API google Et utilisation via script JS
 
 Mise a Jour CSS totale : Identité du site revue pour coller a l'identité du club 
 'Pregnant Healthy Gym' 'sunshine light' 
+
+# [Doc Technique]
+
+## Prérequis
+
+- PHP 7.x
+- MariaDB 15.x
+- Apache 2.x
+- Npm x.x / Vite 5.4.8
+- Laravel 11.27.2
+
+## Installation
+
+```
+git clone https://github.com/KydossK/SalledeSport
+cd main
+
+# adaptez les paramètres
+echo "DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name" > .env.local
+composer install
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+php bin/console doctrine:fixtures:load
+```
+
+Pour charger les données nécessaires au bon fonctionnement :
+
+```
+php bin/console doctrine:fixtures:load --group=prod
+```
+
+## Utilisation
+
+Depuis la racine du projet, lancez un serveur web :
+
+```
+En utilisant la console : Npm run dev 
+php Artisan serve
+```
+
+Puis ouvrez le lien [http://localhost:8000](http://localhost:8000).
+
+- Accueil 
+- Cours 
+- Tarifs 
+- Contact 
+
+- Liens réseaux Sociaux 
+- Mentions Légales
+
+
+## Bugs
+
+Bugs connus :
+
+- Pas de bugs connus actuellement 
+
+
+## Recommandations
+
+Fonctionnalités qui devraient être implémentées :
+
+- Ajout des liens vers les réseaux-sociaux de la salle de sport
+- Mise en place d'un systéme de reservation en ligne de créneau horaires cours
+
+- Possibilité d'acheter via le site les abonnements et séances.
+
+## Mentions légales
+
+Tout le code de ce repository est sous licence [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+## Contact
+
+Pour toute demande d'information, contactez pierre_ple@hotmail.com
+
+
+
+# [Doc Technique Dev]
